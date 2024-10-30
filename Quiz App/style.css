@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.quiz-box {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #ff7f50;
+}
+
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ff5e62;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ff7f50;
+    margin-bottom: 20px;
+}
+
+#progress,
+#count-down {
+    padding: 5px 12px;
+    background-color: #ffe4b5;
+    border-radius: 5px;
+}
+
+#question {
+    font-size: 1.3em;
+    color: #34495e;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    background-color: #ff5e62;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn span {
+    margin-left: 8px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ffd3a3;
+    margin: 20px 0;
+}
+
+footer {
+    font-size: 0.9em;
+    color: #95a5a6;
+    text-align: center;
+}
+
+footer p {
+    font-weight: bold;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .quiz-box {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #question {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        font-size: 0.95em;
+    }
+}
